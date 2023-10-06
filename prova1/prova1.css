@@ -1,0 +1,141 @@
+@media screen and (max-width:600px) {
+    .nav-lateral {
+        position: fixed;
+        width: 100%;
+    }
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-superior {
+    background-color: #D9A0BB;
+    padding: 9px;
+}
+.nav-superior ul {
+    margin-left: 1100px;
+}
+.nav-superior ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+.nav-superior button{
+    background-color: #F2F2F2;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 3px 7px 5px;
+    transition: transform 400ms, box-shadow 400ms;
+}
+.nav-superior button:hover{
+    background-color: white;
+}
+.botao:active {
+    box-shadow: 2px 3px 1px;
+    transform: translate(4px, 6px);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    cursor: pointer;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    background-color: white;
+}
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.nav-lateral {
+    width: 20vw;
+    height: 1200px;
+    background-color: #AFCFD3;
+    text-align: center;
+}
+.nav-lateral button{
+    width: 80%;
+    background-color: #F2F2F2;
+    margin-top: 30px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 3px 7px 5px;
+    transition: transform 400ms, box-shadow 400ms;
+}
+.nav-lateral button:hover{
+    background-color: white;
+}
+.nav-lateral ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.conteudo{
+    width: 80vw;
+    height: 1200px;
+}
+article{
+    color: #733527;
+    background-color: #D9896C;
+    border: solid 5px #733527;
+    padding: 5px;
+    width: 300px;
+    height: 800px;
+}
+.loading{
+    /* altura da seta */
+    width: 48px;
+    /* largura da seta */
+    height: 48px;
+    /* Traço da seta com a borda */
+    border: 3px solid #733527;
+    border-bottom-color: transparent;
+    /* Faz a seta ficar redonda */
+    border-radius: 50%;
+    display: inline-block;
+    /* Dá a posição relativa ao elemento*/
+    position: relative;
+    box-sizing: border-box;
+    /* Deixa a animação como uma rotação linear infinita de 1 segundo */
+    animation: rotation 1s linear infinite;
+}
+.loading::after {
+    /* Diz que tem um conteúdo */
+    content: '';  
+    /* Coloca a posição como absoluta */
+    position: absolute;
+    /* Coloca a seta para a esquerda */
+    left: 20px;
+    /* Coloca a posição da seta para o topo */
+    top: 31px;
+    /* Dá a borda pro conteudo e faz ele ser visto */
+    border: 10px solid transparent;
+    border-right-color: #733527;
+    /* Deixa a seta com rotação */
+    transform: rotate(-40deg);
+}
+  
+/* Animação de rotação */
+@keyframes rotation {
+    /* Ela começa com a rotação em 0 */
+    0% {
+      transform: rotate(0deg);
+    }
+    /* Termina com a rotação em 360 graus */
+    100% {
+      transform: rotate(360deg);
+    }
+} 
