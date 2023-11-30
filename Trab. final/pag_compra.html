@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pag_compra.css">
+    <title>Baby Store</title>
+</head>
+<body>
+    <div class="fundo">
+        <h1>Finalizar Compra</h1>
+        <button id="abrirJanela">Cadastrar Cartão</button>
+    </div>
+
+    <div id="JaneladeCompra" class="overlay">
+        <div class="janela">
+            <span class="x" id="fecharJanela">&times;</span>
+            <form>
+                <label for="numeroCartao">Número do Cartão:</label>
+                <input type="text" id="numeroCartao" name="numeroCartao" required>
+
+                <label for="nomeCartao">Nome do Titular:</label>
+                <input type="text" id="nomeCartao" name="nomeCartao" required>
+
+                <label for="dadosCartao">CPF/CNPJ do Titular:</label>
+                <input type="text" id="dadosCartao" name="dadosCartao" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <label for="validade">Data de Validade:</label>
+                <input type="text" id="validade" name="validade" required>
+
+                <button class="botaoFinalizar"><a href="./carregamento.html">Finalizar Compra</a></button>
+
+            </form>
+            
+            
+        </div>
+    </div>
+
+    <script src="pag_compras.js"></script>
+</body>
+</html>

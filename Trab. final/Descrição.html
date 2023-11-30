@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                display: flex;
+                height: 100vh; 
+                background-color: #A3D5DC;
+            }
+            .container{
+                width: 100%;
+            }
+            
+            .half-screen {
+                flex: 1; 
+                overflow: hidden; 
+            }
+
+            img {
+                width: 100%; 
+                height: auto; 
+                display: block;
+            }
+
+            img:hover{
+                opacity: 80%;
+            }
+
+            .half-screen {
+                padding: 50px;
+                background-color: white;
+                font-family: sans-serif;
+            }
+
+            .botao {
+                border-radius: 60px; 
+                padding: 25px; 
+                border: 1px solid #ccc; 
+                width: 250px;
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                background-color: #a2dcab;
+                font-weight: bold;
+            }
+
+            .botao:hover {
+                background-color: rgb(191, 255, 96);
+            }
+
+            .botao:active {
+                transform: translate(4px, 6px);
+                background-color: rgb(140, 233, 0);
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="half-screen">
+            <img src="./WhatsApp Image 2023-11-30 at 14.20.00.jpeg" alt= ""></img>
+        </div>
+
+        <div class="half-screen">
+        
+            <b>
+            <t style="font-size: 30px;"> Kit maternidade azul e amarelo </t>
+            </b>
+            <p>
+            <t style="font-size: 60px;"> R$70,00 </t> <s> R$99,99 </s>
+            </p>
+            <p style="font-size: 30px;">O que vem no Kit:</p>
+            <p style="font-size: 25px;">
+                Mordedor, escova baby, tesoura de bebê, pente, unhex baby e necessaire.
+            </p>
+            <button class="botao"> <a href="./pag_compra.html">Comprar agora</a> </button>
+            <button class="botao"> Adicionar ao carrinho </button>
+        </div>
+
+    </body>
+</html>

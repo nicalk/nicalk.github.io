@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trabfinal2.css">
+    <title>Baby Store</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navegador">
+            <div class="nav-top">
+                <img src="./icones/logo.png" alt="">
+                <div>
+                    <input type="text" class="pesquisa" type="search">
+                </div>
+                <div class="icones">
+                    <ul>
+                        <li><img src="./icones/🦆 icon _heart_.png" alt=""></li>
+                        <li><img src="./icones/🦆 icon _cart_.png" alt=""></li>
+                        <li><img src="./icones/🦆 icon _person_.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bottom">
+                <ul>
+                    <li><a href="">Maternidade</a></li>
+                    <li><a href="">Roupas</a></li>
+                    <li><a href="">Brinquedos</a></li>
+                    <li><a href="">Higiene</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <p href="">Outros</p>
+                            <div class="drop">
+                                <a href="">Unissex</a>
+                                <a href="">Utilidades</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="barra">
+           <p></p>
+           <b style="padding: 10px;"> outros> utilidades></b>
+           <b style="font-size: 60px; padding: 45%;" class="unissex"> Unissex </b>
+        </div>
+        <div class="conteudo">
+            <div class="conteudo-filtros">
+                <img src="./icones/Filtro.png" alt="">
+            </div>
+            <div class="conteudo-cards">
+                <div class="card">
+                    <a href="./Descrição.html"><img src="./imagens/shopping (1).webp" alt=""></a>
+                    <div class="card-texto">
+                        <h3>Kit maternidade</h3>
+                        <p>R$ 70,00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./imagens/1xg.avif" alt="">
+                    <div class="card-texto">
+                        <h3>Berço infantil</h3>
+                        <p>R$ 1800,00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./imagens/shopping.webp" alt="">
+                    <div class="card-texto">
+                        <h3>Kit maternidade</h3>
+                        <p>R$ 20,00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./imagens/Group 14.png" alt="">
+                    <div class="card-texto">
+                        <h3>Cadeirinha infantil</h3>
+                        <p>R$ 310,00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./imagens/lolo.png" alt="">
+                    <div class="card-texto">
+                        <h3>Conjuntinho infantil</h3>
+                        <p>R$ 120,00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./imagens/lala.webp" alt="">
+                    <div class="card-texto">
+                        <h3>Bolsa maternidade</h3>
+                        <p>R$ 90,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+        }
+    </script>
+</body>
+</html>

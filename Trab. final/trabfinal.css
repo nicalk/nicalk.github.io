@@ -1,0 +1,140 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+}
+.navegador{
+    width: 100%;
+}
+.navegador .nav-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-top ul{
+    list-style: none;
+    display: inline-block;
+    padding: 4px;
+}
+.nav-top ul li{
+    float: left;
+    cursor: pointer;
+}
+.icones ul li img{
+    height: 50px;
+    margin-right: 20px;
+}
+input.pesquisa{
+    width: 260px;
+    border: 5px solid black;
+    border-radius: 25px;
+    display: flex;
+    padding: 9px 4px 9px 80px;
+    background-image: url("./icones/🦆\ icon\ _magnifying\ glass_.png") no-repeat 5px;
+}
+.nav-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-bottom ul{
+    display: inline-block;
+    list-style: none;
+}
+.nav-bottom ul li{
+    float: left;
+    margin: 5px 90px;
+    font-size: 20px;
+}
+.nav-bottom ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.dropdown p{
+    margin: 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.drop{
+    display: none;
+    position: absolute;
+    padding: 15px;
+    width: 200px;
+    background-color: #A3D5DC;
+    z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.drop a{
+    padding: 5px;
+}
+.dropdown:hover .drop{
+    display: flex;
+    flex-direction: column ;
+}
+.slide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide .images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slide .images img{
+    width: 100%;
+    height: auto;
+}
+.slide .slidebtn{
+    position: absolute;
+    margin-top: 20%;
+}
+.conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.conteudo-cards{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo .card{
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+
+    cursor: pointer;
+}
+.conteudo .card img{
+    height: 250px;
+}
+.conteudo .card-texto h3{
+    margin: 0px;
+}
+.conteudo .card-texto p{
+    font-size: 30px;
+    font-weight: bold;
+    display: inline;
+    color: #A3D5DC;
+}
